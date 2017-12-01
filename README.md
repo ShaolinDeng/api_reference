@@ -291,7 +291,6 @@ body: {
     pair,       //交易对，如BIX_BTC
     period,     //k线周期，取值 ['1min', '3min', '5min', '15min', '30min', '1hour', '2hour', '4hour', '6hour', '12hour', 'day', 'week']
     size,       //要几条，1-1000，不传返回1000
-    since,      //查询起始时间，如1510917300000，不传返回最新size条
 }
 返回结果：
 {
