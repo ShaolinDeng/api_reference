@@ -417,18 +417,73 @@ body: {
 返回结果：
 {
     "result":{
-        "coin_symbol":"LTC",        //交易币种
-        "currency_symbol":"BTC",    //定价币种
-        "last":"0.008601",          //当日最新价
-        "high":"0.31231212",        //当日最高价
-        "low":"0.00784",            //当日最低价
-        "change":"-0.00049900",     //当日涨跌
-        "percent":"-5.48%",         //当日涨跌幅
-        "vol24H":"11512.53",        //24小时成交额，单位是定价币种
-        "last_cny":"82.08",         //当日最新价折算cny
-        "last_usd":"12.26"          //当日最新价折算usd
+        "id":4,
+        "coin_symbol":"BIX",            //交易币种
+        "currency_symbol":"BTC",        //定价币种
+        "last":"0.00002704",            //最新价
+        "high":"0.00003480",
+        "low":"0.00001951",
+        "change":"+0.00000715",         //24h涨跌
+        "percent":"+35.95%",            //24h涨跌幅
+        "vol24H":"641954",              //24h成交量
+        "amount":"16.55",               //24h成交额
+        "last_cny":"1.84",              //最新价折算cny
+        "high_cny":"2.37",
+        "low_cny":"1.33",
+        "last_usd":"0.27",              //最新价折算usd
+        "high_usd":"0.35",
+        "low_usd":"0.19"
     },
     "cmd":"api/market"
+}
+```
+
+```
+//全币种市场行情数据
+cmd: "api/marketAll"
+body: {
+}
+返回结果：
+{
+    "result":[
+        {
+            "id":4,
+            "coin_symbol":"BIX",
+            "currency_symbol":"BTC",
+            "last":"0.00002704",
+            "high":"0.00003480",
+            "low":"0.00001951",
+            "change":"+0.00000715",
+            "percent":"+35.95%",
+            "vol24H":"641954",
+            "amount":"16.55",
+            "last_cny":"1.84",
+            "high_cny":"2.37",
+            "low_cny":"1.33",
+            "last_usd":"0.27",
+            "high_usd":"0.35",
+            "low_usd":"0.19"
+        },
+        {
+            "id":5,
+            "coin_symbol":"ETH",
+            "currency_symbol":"BTC",
+            "last":"0.04341296",
+            "high":"0.04884176",
+            "low":"0.04321405",
+            "change":"-0.00047878",
+            "percent":"-1.09%",
+            "vol24H":"86",
+            "amount":"3.77",
+            "last_cny":"2950.87",
+            "high_cny":"3319.88",
+            "low_cny":"2937.35",
+            "last_usd":"432.60",
+            "high_usd":"486.70",
+            "low_usd":"430.62"
+        }
+    ],
+    "cmd":"api/marketAll"
 }
 ```
 
