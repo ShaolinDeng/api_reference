@@ -278,7 +278,7 @@ body: {
 }
 ```
 
-#### 3.2.3 /v1/mdata ####
+#### 3.2.3 /v1/mdata (此接口不需要apikey，可直接访问) ####
 
 * apipath: /v1/mdata
 
